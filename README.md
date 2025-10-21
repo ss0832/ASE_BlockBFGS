@@ -58,6 +58,11 @@ try:
     print("Optimization finished successfully.")
 except Exception as e:
     print(f"Optimization failed: {e}")
+
+# 4. Print final positions
+print("Final positions:")
+print(atoms.get_positions())
+
 ```
 
 #### Key Parameters
@@ -69,6 +74,3 @@ In addition to the standard ASE optimizer parameters, BlockBFGS accepts two new 
 This project is licensed under the GNU Lesser General Public License, Version 2.1 (LGPL-2.1). See the LICENSE file (or COPYING.LESSER) for details.
 
 
-# 4. Print final positions
-print("Final positions:")
-print(atoms.get_positions())
