@@ -61,7 +61,11 @@ except Exception as e:
 
 # 4. Print final positions
 print("Final positions:")
-print(atoms.get_positions())
+symbols = atoms.get_chemical_symbols()
+positions = atoms.get_positions()
+
+for symbol, pos in zip(symbols, positions):
+    print(f"{symbol:<4} {pos[0]:12.8f} {pos[1]:12.8f} {pos[2]:12.8f}")
 
 ```
 
