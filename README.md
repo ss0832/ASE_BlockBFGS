@@ -6,7 +6,7 @@ This optimizer inherits from the standard `ase.optimize.bfgs.BFGS` class but use
 
 ## Key Features & Performance
 
-The standard BFGS algorithm performs a rank-2 update to the approximate Hessian matrix at each step. In contrast, this Block-BFGS optimizer uses a block of the $q$ most recent steps and gradient differences to perform a more robust rank-$2q$ update.
+The standard BFGS algorithm performs a rank-2 update to the approximate Hessian matrix at each step. In contrast, this Block-BFGS optimizer uses a block of the $q$ most recent steps and gradient differences to perform a more robust rank-2q update.
 
 The primary advantage of this approach is its potential for **improved convergence performance and stability**, especially for large-scale systems, complex molecules, or noisy potential energy surfaces. By incorporating more historical information into each update, the optimizer can build a more accurate model of the Hessian, potentially leading to faster convergence in fewer iterations compared to standard BFGS.
 
