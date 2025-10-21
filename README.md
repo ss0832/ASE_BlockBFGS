@@ -14,10 +14,10 @@ The block update logic is based on methods described in computational chemistry 
 
 ## Requirements
 
-* **Python 3**
+* **Python 3.12**
 * **ASE (Atomistic Simulation Environment)**
     * This module has been tested with **ASE version 3.26.0**.
-* **NumPy**
+* **NumPy 2.2.6**
 
 ## Installation
 
