@@ -54,7 +54,7 @@ dyn = BlockBFGS(
 # 3. Run the optimization
 print("Running optimization with BlockBFGS...")
 try:
-    dyn.run(fmax=0.05)
+    dyn.run(fmax=0.0001)
     print("Optimization finished successfully.")
 except Exception as e:
     print(f"Optimization failed: {e}")
