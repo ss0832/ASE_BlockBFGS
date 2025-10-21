@@ -65,11 +65,11 @@ print(atoms.get_positions())
 
 ```
 
-#### Key Parameters
+## Key Parameters
 
 In addition to the standard ASE optimizer parameters, BlockBFGS accepts two new arguments:block_size (int, default: 4): The number of recent steps ($q$) to use in the block update.max_window (int, default: 8): The maximum number of (step, gradient_difference) pairs to store in history. This value must be greater than or equal to block_size.
 
-#### License
+## License
 
 This project is licensed under the GNU Lesser General Public License, Version 2.1 (LGPL-2.1). See the LICENSE file (or COPYING.LESSER) for details.
 
