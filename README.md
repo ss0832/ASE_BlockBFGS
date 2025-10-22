@@ -71,7 +71,11 @@ for symbol, pos in zip(symbols, positions):
 
 ## Key Parameters
 
-In addition to the standard ASE optimizer parameters, BlockBFGS accepts two new arguments:block_size (int, default: 4): The number of recent steps ($q$) to use in the block update.max_window (int, default: 8): The maximum number of (step, gradient_difference) pairs to store in history. This value must be greater than or equal to block_size.
+In addition to the standard ASE optimizer parameters, BlockBFGS accepts two new arguments:
+
+- block_size (int, default: 4): The number of recent steps ($q$) to use in the block update.
+
+- max_window (int, default: 8): The maximum number of (step, gradient_difference) pairs to store in history. This value must be greater than or equal to block_size.
 
 ## License
 
